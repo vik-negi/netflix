@@ -63,7 +63,7 @@ html,body
 .svg-icon-netflix{
     width: 160px; height:75px;
     background-color: beige;
-	background: url('/img/netflixLogo.png');
+	background: url('img/netflixLogo.png');
 	background-size: cover;
 }
 
