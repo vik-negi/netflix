@@ -17,7 +17,7 @@ html,body
 }
 
 .background{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('/img/netflix-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('img/netflixBackground.jpg');
     background-position: center;
     /* background : rgba(0,0,0,0.9); */
     /* opacity: 0.9; */
@@ -63,7 +63,7 @@ html,body
 .svg-icon-netflix{
     width: 160px; height:75px;
     background-color: beige;
-	background: url('/img/netflix-logo.png');
+	background: url('/img/netflixLogo.png');
 	background-size: cover;
 }
 
