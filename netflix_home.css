@@ -1,0 +1,427 @@
+*{
+    padding : 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color : black;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('/img/netflix-background.jpg');
+    background-position: center;
+    /* background : rgba(0,0,0,0.9); */
+    /* opacity: 0.9; */
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    position: relative;
+    height: 690px;
+    width: 100%;
+}
+
+.svg-container{
+    padding:0px 45px;
+    display:  flex;
+    justify-content: space-between;
+}
+.sign-in-container{
+    display: flex;
+    justify-content: space-between;
+    width : 215px;
+    margin-top: 1.5em;
+    margin-right: 0.5em;
+
+}
+
+
+.sign-in-btn{
+    height: 33px;
+    width : 90px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(250, 21, 21);
+    border : 0px;
+    color: white;
+    border-radius: 0.2em;
+}
+
+.sign-in-btn:hover{
+    cursor: pointer;
+}
+
+
+.svg-icon-netflix{
+    width: 160px; height:75px;
+    background-color: beige;
+	background: url('/img/netflix-logo.png');
+	background-size: cover;
+}
+
+
+.lang-dropdown{
+    position:relative;
+    display: inline-block;
+}
+
+.lang-dropbtn{
+    background-color: transparent;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 3px;
+    padding : 4px 10px;
+    width: 95px;
+    height: 35px;
+    cursor: pointer;
+    color: white
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color : white;
+    width: 90px;
+    height: 25px;
+    /* text-align: center; */
+    line-height: 25px;
+    text-align:center;
+    display : block;
+    text-decoration: none;
+    background-color: gray;
+}
+.dropdown-content a:hover{
+    background-color: #5f61f0;
+}
+
+.lang-dropdown:hover .lang-dropbtn{
+    cursor: pointer;
+}
+.lang-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.mid-web{
+    width: 75%;
+}
+
+
+.foreground{
+    color: white;
+    /* background-color: rgb(0,0,0); */
+    width: 700px;
+    top: 56%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.foreground h1{
+    /* padding: 0% 15%; */
+    font-size: 45px;
+    
+}
+
+.watch-anywhere{
+    font-size: 23px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 1em;
+}
+.ready h3{
+    font-size: 16px;
+    margin-top: 4em;
+    margin-bottom: 1.5%;
+    font-family: Lato;
+}
+
+.start{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 5em; */
+    flex-wrap: wrap;
+}
+
+.email{
+    background: white;
+    display: inline;
+    width: 430px;
+    height: 60px;
+    color: rgb(0,0,6);
+    border-style: none;
+    margin-top: 1px;
+    margin-right: -0.6%;
+}
+.get-started{
+    background-color: rgb(229, 9, 20);
+    height: 62px;
+    width: 208px;
+    border-style: none;
+    /* margin-left: -4px; */
+    color: white;
+    font-size: 25px;text-transform: capitalize;
+    box-shadow: 0px 1px 3px -6px;
+}
+
+.get-started:hover{
+    background-color: rgb(255, 9, 26);
+    cursor: pointer;
+}
+.header-line{
+    position: relative;
+    /* top: 89%; */
+    height: 8px;
+    background-color: rgb(58, 58, 58);
+    border: none;
+}
+
+/* ************************************** */
+.heading-h1{
+    margin-top: 140px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+/* ***************************************** */
+
+@media screen and (max-width: 949px) {
+    .svg-icon-netflix{
+        width: 160px; height:75px;
+        background-color: beige;
+        background: url('/img/netflix-logo.png');
+        background-size: cover;
+    }
+    .svg-container{
+        padding:0px 10px;
+        display:  flex;
+        justify-content: space-between;
+    }
+    .start{
+        width: 80%;
+        position: relative;
+        display: flex;
+        margin: auto;
+        
+    }
+
+
+    .foreground{
+        top: 55%;
+    }
+    .get-started{
+        display: block;
+        margin-top: 0.6em;
+        height: 42px;
+        width: 125px;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    .email{
+        display: block;
+        width: 95%;
+        height: 46px;
+    } 
+    .ready{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ready h3{
+        /* background-color: #5f61f0; */
+        width: 73%;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 1em;
+        font-weight: 100;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .watch-anywhere{
+        margin-top: 0.8em;
+        margin-bottom: 0em
+
+    }
+}
+
+
+
+@media screen and (max-width: 549px) {
+    .svg-icon-netflix{
+        width: 100px; 
+        height: 60px;
+        background: url('/img/netflix-logo.png');
+        background-size: cover;
+    }
+    .svg-container{
+        /* padding: 10px 10px; */
+        display:  flex;
+        justify-content: space-between;
+    }
+
+    .sign-in-container{
+        display: flex;
+        justify-content: space-between;
+        width : 155px;
+        margin-right: 0.5em;
+    
+    }
+    
+    
+    .sign-in-btn{
+        height: 27px;
+        width : 60px;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        background-color: rgb(250, 21, 21);
+        border : 0px;
+        color: white;
+        border-radius: 0.2em;
+    }
+    
+    .sign-in-btn:hover{
+        cursor: pointer;
+    }
+    
+    
+    .lang-dropdown{
+        position:relative;
+        display: inline-block;
+    }
+    
+    .lang-dropbtn{
+        background-color: transparent;
+        border: 1px solid rgb(199, 199, 199);
+        border-radius: 3px;
+        padding : 0px 5px;
+        width: 85px;
+        height: 27px;
+        cursor: pointer;
+        color: white
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .dropdown-content a{
+        color : white;
+        width: 85px;
+        height: 25px;
+        /* text-align: center; */
+        line-height: 25px;
+        text-align:center;
+        display : block;
+        text-decoration: none;
+        background-color: gray;
+    }
+    /* .mid-web{
+        width: 100%;
+    } */
+
+
+
+
+    .background{
+        /* position: absolute;  */
+        height: 523px;
+        /* width: 100vw; */
+        background-size: cover;
+        background-position: center;
+        background-color: #5f61f0;
+        overflow: hidden;
+        background-size: 100% 100%;
+    }
+    .start{
+        width: 70%;
+        position: relative;
+        display: flex;
+        margin: auto;
+        
+    }
+    .email-cont{
+        display: block;
+    }
+
+    .foreground{
+        top: 45%;
+        }
+    .foreground h1{
+        /* position:relative; */
+        text-align: center;
+        left : 50%;
+        padding-left: 1em;
+        font-size: 27px;
+        /* background-color: #5f61f0; */
+        width :70%;
+    }
+    .for-h1{
+        margin-left: 2em;
+        overflow-x: visible;
+    }
+    .get-started{
+        display: block;
+        margin-top: 0.6em;
+        height: 42px;
+        width: 125px;
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    .email{
+        display: block;
+        width: 95%;
+        height: 46px;
+    } 
+    .ready{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .ready h3{
+        /* background-color: #5f61f0; */
+        width: 65%;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 1em;
+        font-weight: 100;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .watch-anywhere{
+        margin-top: 0.8em;
+        margin-bottom: 0em;
+        font-size: 17px;
+    }
+
+    .header-line{
+        position: relative;
+        top: 87%;
+        height: 10px;
+        background-color: rgb(116, 116, 116);
+        border: none;
+    }
+}
+
+
+
+
+
