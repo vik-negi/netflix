@@ -7,6 +7,7 @@
     <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
     <link href="img/favicon.ico" rel="icon">
     <link rel="stylesheet" href="netflix_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
@@ -40,26 +41,217 @@
             <div class="foreground">
                 <h1 class="for-h1">Unlimited movies, TV Shows and more.</h1>
                 <h2 class="watch-anywhere">Watch anywhere. Cancel anytime</h2>
-                <div class="ready"><h3>Ready to Watch? Enter your emain to create or restart your membership.</h3>
+                <form class="home-page-form">
+                    <div class="ready"><h3>Ready to Watch? Enter your emain to create or restart your membership.</h3>
+                    </div>
+                    <div class="email-cont">
+                    <div class="start">
+                    <input type="email" placeholder="   Email address" class="email">
+                    <!-- <input type="button" value="get started >" class="get-started"> -->
+                    <button class="get-started">get started <i class="fas fa-chevron-right"></i></button>
                 </div>
-                <div class="email-cont">
-                <div class="start">
-                <input type="email" placeholder="   Email address" class="email">
-                <!-- <input type="button" value="get started >" class="get-started"> -->
-                <button class="get-started">get started <i class="fas fa-chevron-right"></i></button>
             </div>
-        </div>
+                </form>
         </div>
     </div>
     </div>
     <hr class="header-line">
 
     <div class="tv-section">
-        <h1 class="heading-h1">Enjoy on your TV.</h1>
+        <div class="tv-sec-cont">
+            <div class="enjoy-tv-sec">
+                <h1 class="tv-sec-h1">Enjoy on your TV.</h1>
+                <p class="tv-sec-p">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="tv-sec-r">
+                <div class="tv-sec-r-cont">
+                    <img src="img/tv.png">
+                </div>
+                <video class="tv-video" controls autoplay>
+                    <source type="video/mp4" src="video/video-tv.m4v"></source>
+                </video>
+            </div>
+        </div>
+    </div>
+    <hr class="header-line">
 
+
+    <div class="tv-section show-section">
+        <div class="tv-sec-cont show-sec-cont">
+            <div class="enjoy-tv-sec enjoy-show-sec">
+                <div class="show-sec-r-cont">
+                    <img src="img/mobile-0819.jpg">
+                </div>
+            </div>
+            <div class="tv-sec-r show-sec-r">
+                <h1 class="tv-sec-h1">Download your shows to watch offline.</h1>
+                <p class="tv-sec-p">Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="header-line">
+
+    <div class="tv-section unlimited">
+        <div class="tv-sec-cont unlimit-sec-cont">
+            <div class="enjoy-tv-sec enjoy-unlimit-sec">
+                <h1 class="tv-sec-h1">Watch everywhere.
+                </h1>
+                <p class="tv-sec-p">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="tv-sec-r umlimit-sec-r">
+                <div class="tv-sec-r-cont">
+                    <img src="img/device-pile-in.png">
+                </div>
+                <video class="tv-video" controls autoplay>
+                    <source type="video/mp4" src="video/video-devices-in.m4v"></source>
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <hr class="header-line">
+
+
+    <div class="tv-section show-section">
+        <div class="tv-sec-cont show-sec-cont">
+            <div class="enjoy-tv-sec enjoy-show-sec">
+                <div class="show-sec-r-cont">
+                    <img src="img/child.png">
+                </div>
+            </div>
+            <div class="tv-sec-r show-sec-r">
+                <h1 class="tv-sec-h1">Create profiles for children.</h1>
+                <p class="tv-sec-p">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+        </div>
     </div>
 
 
+    <hr class="header-line">
+
+    <div class="ask-ques">
+        <div class="ask-ques-cont">
+            <h1>Frequently Asked Questions</h1>
+            <div class="ques-conts-box">
+                <div class="ques-conts">
+                    <ul class="questions sn-ques-1">
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>What is Netflix?</h1>
+                        <i class="fa fa-plus" onclick="showDropdown(1);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-1">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</br></br>
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                        </li>
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>How much does Netflix cost?</h1>
+                        <i class="fa fa-plus" onclick="showDropdown(2);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-2">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+                    </div>
+                        </li>
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>Where can I watch?</h1>
+                        <i class="fa fa-plus" id="cross-plus" onclick="showDropdown(3);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-3">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                        </br></br>
+                        You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                    </div>
+                        </li>
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>How do I cancel?</h1>
+                        <i class="fa fa-plus" id="cross-plus" onclick="showDropdown(4);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-4">
+                        <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+                        </li>
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>What can I watch on Netflix?</h1>
+                        <i class="fa fa-plus" id="cross-plus"  onclick="showDropdown(5);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-5">
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                        </li>
+                        <li class="sn-ques-1 ques-ans">
+                        <button type="button" class="ques-btn">
+                            <h1>Is Netflix good for child?</h1>
+                        <i class="fa fa-plus" id="cross-plus" onclick="showDropdown(6);"></i>
+                        </button>
+                    <div class="qnes-ans" id="cross-plus-6">
+                        <p>
+                            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</br></br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+
+                        </p>
+                    </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <form class="home-page-form">
+                <div class="ready">
+                    <h3 class="bottom-ready">Ready to Watch? Enter your emain to create or restart your membership.</h3>
+                </div>
+                <div class="email-cont">
+                    <div class="start">
+                        <input type="email" placeholder="   Email address" class="email">
+                        <!-- <input type="button" value="get started >" class="get-started"> -->
+                        <button class="get-started">get started <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <hr class="header-line">
+
+    <footer>
+        <div class="fotter-cont">
+            <div class="footer-sec">
+                <p>Questions? Call <a href="#">000-800-040-1843</a></p>
+                <ul class="bottom-ops">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Media Centre</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                    <li><a href="#">Only on Netflix</a></li>
+                </ul>
+                <div class="lang-dropdown bottom-btn">
+                    <select class="lang-dropbtn">
+                        <!-- <option><i class="fas fa-globe"></i> English <i class="fas fa-caret-down"></i></option> -->
+                    <!-- <div class="dropdown-content"> -->
+                        <option><a href="#"><i class="fas fa-globe"></i> Hindi <i class="fas fa-caret-down"></i></a></option>
+                        <option><a href="#"><i class="fas fa-globe"></i> English <i class="fas fa-caret-down"></i></a></option>
+                    <!-- </div> -->
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
 
 
 
